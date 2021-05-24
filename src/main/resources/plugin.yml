@@ -1,0 +1,20 @@
+name: ServiceAnnouncer
+version: 1.1
+main: com.legodev.serviceannouncer.ServiceAnnouncer
+api-version: 1.16
+load: POSTWORLD
+author: LegoDev
+description: Service announcer
+
+commands:
+  serviceannounce:
+    description: Announce something!
+    permission: serviceannouncer.announce
+    permission-message: You have no power here
+    usage: "Usage: /serviceannounce <level> <message>."
+    aliases: [sa]
+
+permissions:
+  serviceannouncer.announce:
+    description: Allows use of the /serviceannounce command.
+    default: op
